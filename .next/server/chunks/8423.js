@@ -1,0 +1,1 @@
+"use strict";exports.id=8423,exports.ids=[8423],exports.modules={8423:(t,e,s)=>{s.r(e),s.d(e,{default:()=>o});let o=(0,s(68570).createProxy)(String.raw`/Users/apple/Desktop/Personal Projects/shadowgrow/src/components/digital-files/client-action-button.tsx#default`)}};
