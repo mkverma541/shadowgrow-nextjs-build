@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
+
+// Define the main site domain
+const SITE_DOMAIN = process.env.NEXT_PUBLIC_APP_BASE_URL || 'zmtfirmwarefiles.com';
+
 const nextConfig = {
   experimental: {
     // Only enable essential experimental features
@@ -116,7 +120,7 @@ const nextConfig = {
     const connectSrc = [
       "'self'",
       apiBaseUrl, // Allow the configured API URL
-      'https://apis.zmtfirmwarefiles.com', // Production API fallback
+      'https://api.zmtfirmwarefiles.com', // Production API fallback
       'https://www.google-analytics.com',
       'https://vitals.vercel-insights.com',
       'https://www.clarity.ms',
@@ -194,6 +198,33 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true, // Skip ESLint during builds for speed
+  },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: `(?!${SITE_DOMAIN.replace('.', '\\.')}$)(.*)`,
+          },
+        ],
+        permanent: true,
+        destination: `https://${SITE_DOMAIN}/:path*`,
+      },
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'header',
+            key: 'x-forwarded-proto',
+            value: 'http',
+          },
+        ],
+        permanent: true,
+        destination: `https://${SITE_DOMAIN}/:path*`,
+      },
+    ];
   },
 };
 
