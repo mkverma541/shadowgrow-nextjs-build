@@ -1,0 +1,87 @@
+User-agent: *
+Allow: /
+
+# High-priority pages for crawling
+Allow: /
+Allow: /search
+Allow: /files
+Allow: /folders
+Allow: /free-files
+Allow: /paid-files
+Allow: /blogs
+Allow: /contact-us
+
+# Block admin and private areas
+Disallow: /admin/
+Disallow: /api/
+Disallow: /dashboard/
+Disallow: /account/
+Disallow: /auth/
+Disallow: /checkout/
+Disallow: /cart/
+Disallow: /profile/
+Disallow: /download/
+
+
+# Block technical files
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /manifest.json
+Disallow: /sw.js
+
+# Special crawling rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 2
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+User-agent: YandexBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+# Block problematic bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+# Backend-generated sitemap location
+Sitemap: https://apis.filewale.com/static/sitemaps/sitemap-index.xml
+
+# Host directive
+Host: https://filewale.com 

@@ -1,0 +1,63 @@
+{
+  "../node_modules/jspdf/dist/jspdf.es.min.js -> canvg": {
+    "id": 12396,
+    "files": [
+      "static/chunks/bc98253f.5b0f4fe717c5b99c.js",
+      "static/chunks/3969.c20aac5c7f84ab97.js"
+    ]
+  },
+  "../node_modules/jspdf/dist/jspdf.es.min.js -> dompurify": {
+    "id": 18848,
+    "files": [
+      "static/chunks/8848.8d85baa2792181e8.js"
+    ]
+  },
+  "../node_modules/jspdf/dist/jspdf.es.min.js -> html2canvas": {
+    "id": 24457,
+    "files": [
+      "static/chunks/ad2866b8.1fd5edbd6b1bba26.js"
+    ]
+  },
+  "components/digital-files/file-details-server.tsx -> ./client-action-button": {
+    "id": 77587,
+    "files": [
+      "static/chunks/4341-ceb7b71528207ffa.js",
+      "static/chunks/8841-1ead19ed338d472b.js",
+      "static/chunks/6668-9c5833d34d24fb2a.js",
+      "static/chunks/5533-7c17b3c7ba2d7c60.js",
+      "static/chunks/4490-0dae04cc7bbdd49d.js",
+      "static/chunks/4881-5275a20f73ec121d.js",
+      "static/chunks/2880-40c3aa0bfb823a11.js",
+      "static/chunks/7587-db595d7fa03135b5.js",
+      "static/chunks/1981.4e654ec0fa91cc88.js"
+    ]
+  },
+  "components/digital-files/file-item.tsx -> ./client-action-button": {
+    "id": 77587,
+    "files": [
+      "static/chunks/4341-ceb7b71528207ffa.js",
+      "static/chunks/6668-9c5833d34d24fb2a.js",
+      "static/chunks/5533-7c17b3c7ba2d7c60.js",
+      "static/chunks/4490-0dae04cc7bbdd49d.js",
+      "static/chunks/4881-5275a20f73ec121d.js",
+      "static/chunks/2880-40c3aa0bfb823a11.js",
+      "static/chunks/7587-db595d7fa03135b5.js",
+      "static/chunks/8634.5b24c58f25b95f5b.js"
+    ]
+  },
+  "components/downloads-package/downloads-package-section.tsx -> @/components/cart/client-add-to-cart-button": {
+    "id": 68748,
+    "files": [
+      "static/chunks/7003-5ed8bda681f9334c.js",
+      "static/chunks/4341-ceb7b71528207ffa.js",
+      "static/chunks/4490-0dae04cc7bbdd49d.js",
+      "static/chunks/4881-5275a20f73ec121d.js",
+      "static/chunks/2880-40c3aa0bfb823a11.js",
+      "static/chunks/8706.a8aadab6c006a3bc.js"
+    ]
+  },
+  "store/store.ts -> @/services/auth-interceptor": {
+    "id": 82768,
+    "files": []
+  }
+}
