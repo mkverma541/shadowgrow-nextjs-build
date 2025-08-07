@@ -1,5 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    // Disable static optimization for dynamic content
+    experimental: {
+        // Allow dynamic server usage
+        serverComponentsExternalPackages: [],
+    },
+    
+    // Configure dynamic routes
+    async headers() {
+        return [
+            {
+                source: '/(.*)',
+                headers: [
+                    {
+                        key: 'Cache-Control',
+                        value: 'public, max-age=0, must-revalidate',
+                    },
+                ],
+            },
+        ];
+    },
+
     images: {
         domains: ['demo-api.shadowgrow.com', 'api.gsmfileguru.com', 'localhost', 'apis.filewale.com', 'gsmraja-api.shadowgrow.com', 'api.zmtfirmwarefiles.com'],
         remotePatterns: [
